@@ -6,6 +6,11 @@ var request = require('request');
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 })
+/*Thank you Handler */
+router.get('/thankyou', function(req, res, next) {
+  res.render('thankyou', { title: 'Express' });
+})
+
 
 router.post('/handleform', function(req, res, next) {
   var options = {
@@ -33,13 +38,18 @@ router.post('/handleform', function(req, res, next) {
       
       };
       request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
+        if (error) {
+          res.send({Message:"Error"});;
+        }
+        else {
+          res.send({Message:"Success"});
+
+        }
+       
       });
-      res.render('thankyou', { message: 'Thank You For Submitting' });
+      
     }
   });
-  res.render('thankyou', { message: 'Thank You For Submitting' });
 });
 
 module.exports = router;

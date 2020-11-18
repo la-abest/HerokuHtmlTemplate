@@ -724,13 +724,11 @@
             url: "/handleform",                        // Page that we are submitting to. Use AMPScript to get the URL of the current page       
             data: "action=signup&Email=" + email + "&fname=" + fname + "&phone=" + phone + "&lname=" + lname + "&location=" + location ,
             success: function(data) {                                        // This is the function that is called when the ajax returns sucessfully in this case data will 
-                                                                             // contain the out variable from SSJS
-                var json = data.split('|~|~|')[0].replace(/\s+$/, "");       //Here is where we use the delimiter to seperate the rendered page\tracking info from the SSJS output object
-                json = json.replace(", ]", "]");                             // a little more cleanup to convert the output from SSJS from messy text to valid JSON
-                try 
+            console.log(data);                                                                 // contain the out variable from SSJS
+             try 
                 {
-                    data = $.parseJSON(json);                                // And finally we convert the SSJS output json text into a valid JSON object.
-                    if(data.Status){
+                    if(data.Message == "Success")
+                    {
                         $("#mainForm").slideUp("slow", function() {});
                         $("#thankYou").slideDown("slow", function() {});        // Use jQuery to set the HTML of the div in the body to the SampleMessage from the SSJS output object.
                     }
