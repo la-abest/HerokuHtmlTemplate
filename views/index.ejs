@@ -1,780 +1,273 @@
+<!DOCTYPE html>
+<html>
 
-  <!DOCTYPE html>
-  <html>
-  
-  <head>
+<head>
   <!-- Drop Global Site Tag Here -->
-  
-      <title>THE TINKER PROJECT</title>
-      <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <link href="https://pub.s4.exacttarget.com/tzs4dqfpoxs/tzs4dqfpoxs" rel="stylesheet">
-     
-  
-      
-  
-      <style class="main_style">
-          /*********Brand Colors***************/
-          /*********Find and replace #0E172F with your customer's primary color***************/
-          button,
-          .button {
-              background-color: #990000;
-              color: #ffffff;
-              border-radius: 0px;
-          }
-  
-          button.buttonblock,
-          td.buttonblock {
-              background-color: #990000;
-          }
-  
-          a {
-              color: #990000;
-          }
-  
-          .form-button:hover,
-          button.buttonblock:hover,
-          td.buttonblock:hover {
-              opacity: 0.8;
-              transition: all 0.1s ease;
-              cursor: pointer;
-          }
-  
-          .header>.logo {
-              max-width: 200px;
-          }
-  
-          .logo img:first-of-type {
-              max-height: 51px;
-          }
-  
-          .header.dark {
-              background: #ffffff;
-              color: #58595b;
-              text-transform: uppercase;
-              position: sticky;
-              top: 0px;
-              z-index: 500;
-              border-top: 3px solid #EB0A1E;
-          }
-  
-          .header.light {
-              background: #ffffff;
-              border-top: 3px solid #19274c;
-              color: #4f4f4f;
-              text-transform: uppercase;
-              position: sticky;
-              top: 0px;
-              z-index: 500;
-          }
-  
-          .navigation li {
-              padding-left: 20px;
-              padding-right: 20px;
-              display: inline-block;
-          }
-  
-  
-          .navigation li a {
-              text-decoration: none;
-              transition: all 0.1s ease;
-  
-          }
-  
-          .navigation li:last-of-type {
-              padding-right: 0px;
-          }
-  
-          .dark .navigation li a {
-              color: #363636;
-          }
-  
-          .light .navigation li a {
-              color: #4f4f4f;
-          }
-  
-          .dark .navigation a:hover {
-              color: #EB0A1E;
-          }
-  
-          .navigation a.active {
-              color: #990000 !important;
-              font-weight: 600;
-          }
-  
-  
-  
-          .SF_logo {
-              width: 50px;
-          }
-        
-        
-  
-          footer,
-          .footer {
-              background: #555559;
-              line-height: 1.5em;
-              text-align: center;
-              color: #9B9B9B;
-              border-top: 3px solid #EB0A1E;
-          }
-  
-          .footer .disclaimer .salesforce,
-          .main-footer .disclaimer .salesforce {
-              background: url(https://s3.amazonaws.com/nto/images/logo-salesforce.svg) no-repeat center center;
-              background-size: contain;
-              display: inline-block;
-              height: 37px;
-              position: relative;
-              top: 16px;
-              width: 60px;
-          }
-  
-          .slds-text-heading_x-large {
-              color: #EB0A1E;
-              line-height: 2.1rem;
-          }
-  
-          #POV {
-              background: #ffffff;
-             background-image: url('https://image.s4.sfmc-content.com/lib/fe8e15747d60017e7d/m/1/c9bf10a7-b30f-4311-b1e4-808fcb3de6b2.png');
-              background-repeat: no-repeat;
-              background-position: bottom right;
-              background-size:70%;
-          }
-          
-        
-  
-          .callbacks_nav {
-              background: transparent url("https://image.s4.sfmc-content.com/lib/fe9615737265077870/m/1/329d7c49-f5bb-469b-921d-ae3fcfb69178.png") no-repeat left top;
-              background-size: 80px;
-          }
-  
-     
-  
-          #Solution1, #Solution3,  {
-              background: #fff;
-          }
-           
-          .fa-ul{
-              margin-left: 2em;
-              margin-bottom: 20px;
-          }
-          
-          .fa-li{
-              color:#c00;
-          }
-  
-  
-  
-          /*********Global Colors***************/
-          body {
-              margin: 0;
-              font-family: 'Open Sans', sans-serif, "Helvetica Neue", Arial;
-              font-size: 12px;
-              font-weight: 400;
-              line-height: 1.8rem;
-              color: #575757;
-              text-align: left;
-              background-color: #f7f7f7;
-          }
-  
-          h1,
-          h2,
-          h3,
-          h4 {
-              color: #333333 !important;
-          }
-  
-          p {
-              color: #4F4F4F;
-              font-size: 14px;
-              line-height: 1.8rem;
-          }
-   .slds-button-group-row span{
-              display: inline-block;
-          }
-  
-  
-         /** button,
-          .button {
-              font-size: 1.15rem;
-              text-transform: uppercase;
-              text-decoration: none;
-              padding: .5rem 1rem;
-          }
-  
-          button:hover,
-          .button:hover {
-              opacity: .7;
-              color: #ffffff !important;
-          }******/
-  
-          .footer a {
-              color: #9B9B9B !important;
-              text-decoration: none;
-              font-size: 1em;
-          }
-  
-          .footer a:hover {
-              text-decoration: underline;
-          }
-  
-          .slds-text-heading_x-large {
-              font-size: 3em;
-          }
-  
-          .serif {
-              font-family: 'Baskerville', 'Times', serif;
-          }
-  
-          .slds-text-heading_medium {
-              line-height: 2rem;
-          }
-  
-          .sm-hr {
-              width: 100%;
-              max-width: 100px;
-              height: 1px;
-              background: #ffffff;
-              margin: 0 auto;
-          }
-          .sm-photo {
-                  width: 50%;
-                  height: auto;
-              }
-  
-          iframe {
-              margin: auto;
-              width: 500px;
-              height: 300px;
-              border: solid 1px #ffffff;
-          }
-  
-          .slds-text-color_inverse {
-              color: #ffffff !important;
-          }
-          
-          
-  
-  
-  
-  
-          /*********Form Styling*****************/
-          .formfield-input input {
-      background-color: #FFFFFF;
-      border: 1px solid #DDDBDA;
-      border-radius: 0.25rem;
-      color: #4F4F4F;
-      width: 100%;
-      transition: border 0.1s linear, background-color 0.1s linear;
-      display: inline-block;
-      line-height: 1.875rem;
-      font-size: 0.75rem;
-      min-height: calc(1.875rem + 2px);
-  }   
-          
-          .formfield-input input::placeholder {color: #bbbbbb;}
-          
-          .slds-form-element__label {
-      padding: 2px .7rem 0;
-      display: inline-block;
-      font-size: 0.75rem;
-      color: #474747;
-              font-weight: normal;
-  }
-          
-       .form-button, button.buttonblock, td.buttonblock {
-      font-size: 16px;
-      color: #FFFFFF;
-      text-align: center;
-      text-decoration: none;
-      display: block;
-      padding: 12px 60px;
-      border-radius: 3px;
-      margin: 30px auto;
-      text-transform: uppercase;
-              background-color: #c00;
-      border: 1px solid #c00;
-      -webkit-appearance: none !important;
-  } 
-          
-          .form-wrapper{
-              border:2px solid #f2f2f2;
-              background-color: #f2f2f2;
-          }
-          
-          .confirmed_icon {
-      color: #c00;
-      font-size: 50px;
-          }
-          /*********Mobile Styling***************/
-          @media (max-width: 768px) {
-              .mobile-hidden {
-                  display: none;
-              }
-  
-              .mobile-show {
-                  display: block;
-              }
-  
-              .logo {
-                  text-align: left;
-              }
-  
-              .logo img {
-                  margin: 0px auto;
-              }
-              
-              .hamburger{
-                  text-align: right;
-                  cursor: pointer;
-                  font-size: 1.4rem;
-              }
-  
-              .tmp-container {
-                  width: 100%;
-              }
-  
-              .hero {
-                  width: 100%;
-              }
-  
-              .tmp--full-width {
-                  width: 100%;
-                  float: left;
-                  padding: 0px !important;
-              }
-  
-              .tmp--full-width-center {
-                  width: 100%;
-                  float: left;
-                  padding: 10px 0px;
-                  text-align: center;
-              }
-  
-              .wrapper-padding {
-                  padding: 20px;
-              }
-  
-              .photo {
-                  width: 100%;
-                  height: auto;
-              }
-              .sm-photo {
-                  width: 50%;
-                  height: auto;
-              }
-  
-              .row {
-                  width: 100%;
-              }
-  
-              .tmp--hide {
-                  display: none;
-              }
-  
-              .slds-container_large#Trailmap {
-                  padding: 0px !important;
-              }
-  
-            
-  
-              .slds-p-right_x-large,
-              .slds-p-right--x-large {
-                  padding-right: 0;
-              }
-  
-              .slds-p-bottom_x-large,
-              .slds-p-bottom--x-large {
-                  padding-bottom: 1.5rem;
-              }
-  
-              .slds-p-left_x-large,
-              .slds-p-left--x-large {
-                  padding-left: 0;
-              }
-  
-              .slds-p-vertical_x-large,
-              .slds-p-vertical--x-large {
-                  padding-top: 1.5rem;
-                  padding-bottom: 1.5rem;
-              }
-  
-              .slds-p-horizontal_x-large,
-              .slds-p-horizontal--x-large {
-                  padding-right: 1.5rem;
-                  padding-left: 1.5rem;
-              }
-  
-              .slds-p-top_x-large,
-              .slds-p-top--x-large,
-              .slds-p-top_xx-large {
-                  padding-top: 1.5rem;
-              }
-  
-              .slds-p-around_x-large,
-              .slds-p-around--x-large {
-                  padding: 1.5rem;
-              }
-  
-              .slds-size_1-of-1,
-              .slds-size--1-of-1 {
-                  width: 100%;
-              }
-  
-              .slds-size_1-of-2,
-              .slds-size--1-of-2 {
-                  width: 50%;
-              }
-  
-              .slds-size_1-of-3,
-              .slds-size--1-of-3 {
-                  width: 33.3333%;
-              }
-  
-              .slds-size_2-of-3,
-              .slds-size--2-of-3 {
-                  width: 66.6667%;
-              }
-  
-              .slds-size_1-of-4,
-              .slds-size--1-of-4 {
-                  width: 25%;
-              }
-  
-              .slds-size_2-of-4,
-              .slds-size--2-of-4 {
-                  width: 50%;
-              }
-  
-              .slds-size_3-of-4,
-              .slds-size--3-of-4 {
-                  width: 75%;
-              }
-  
-              body {
-                  text-align: center;
-              }
-  
-              iframe {
-                  margin: auto;
-                  width: 90%;
-                  height: 300px;
-              }
-              
-                #POV {
-            
-              background-size:100%;
-          }
-              .navigation{
-                  display: none;
-              }
-              
-              .navigation li{
-                  display: block;
-                  text-align: center;
-                  padding: 10px 0;
-              }
-              
-              .navigation li:last-of-type {
-                  padding-bottom: 20px;
-              }
-  
-          }
-          
-          @media only screen and (max-width: 1068px){
-            .slds-container_large {
-                  padding-left: 20px;
-                  padding-right: 20px;
-              }
-          }
-  
-  
-  
-  
-          @media screen and (min-width: 768px) {
-              .mobile-show {
-                  display: none;
-              }
-  
-  
-          }
-  
-          @media (max-width: 1068px) and (min-width: 768px) and (orientation: portrait) {
-              .tmp-container {
-                  width: 100%;
-              }
-          }
-  
-          @media (max-width: 1068px) and (min-width: 768px) and (orientation: landscape) {
-              .tmp-container {
-                  width: 100%;
-              }
-          }
-  
-          @media only screen and (max-width: 480px) {
-  
-              body,
-              .tb_properties { 
-                  padding: 0px;
-              }
-  
-              .buttonstyles {
-                  padding: 10px 40px;
-              }
-          }
-  
-      </style>
-      
-     
-  </head>
-  
-  
-  <body style="margin:0px auto;max-width:100%;padding:0px;">
-  
-      <div class="header dark">
-          <div class="slds-container_large slds-container--center slds-grid slds-wrap slds-grid_vertical-align-center">
-              <!-- Start - Logo Column-->
-              <div class="slds-size_1-of-2 slds-medium-size_1-of-3">
-                  <div class="logo">
-                      <!--replace img with customer logo-->
-                      <a href="https://pub.s4.exacttarget.com/qp203cy5l2r"><img class="slds-p-around_x-small" src="https://image.s4.sfmc-content.com/lib/fe32117276640478731173/m/1/a74b4dac-b55d-4e3e-86c1-0c525c3470b5.png" alt="Toyota" style="font-family: arial, sans-serif; font-size:10px; color: #ffffff;"></a>
-                  </div>
-              </div>
-              <div class="slds-size_1-of-2 mobile-show">
-                  <div class="hamburger">
-  <i class="fas fa-bars"></i></div>
-  
-              </div>
-              <div class="slds-size_1-of-1 slds-medium-size_2-of-3">
-                  <div class="slds-p-left_x-large">
-  
-  
-                 <div class="slds-text-align_right navigation">
-                      </div>
-  
-                  </div>
-              </div>
-  
-  
-  
-  
-          </div>
+
+  <title>THE TINKER PROJECT</title>
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://pub.s4.exacttarget.com/tzs4dqfpoxs/tzs4dqfpoxs" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+
+<body style="margin:0px auto;max-width:100%;padding:0px;">
+
+  <div class="header dark">
+    <div class="slds-container_large slds-container--center slds-grid slds-wrap slds-grid_vertical-align-center">
+      <!-- Start - Logo Column-->
+      <div class="slds-size_1-of-2 slds-medium-size_1-of-3">
+        <div class="logo">
+          <!--replace img with customer logo-->
+          <a href="https://pub.s4.exacttarget.com/qp203cy5l2r"><img class="slds-p-around_x-small"
+              src="https://image.s4.sfmc-content.com/lib/fe32117276640478731173/m/1/a74b4dac-b55d-4e3e-86c1-0c525c3470b5.png"
+              alt="Toyota" style="font-family: arial, sans-serif; font-size:10px; color: #ffffff;"></a>
+        </div>
       </div>
-      <!---POV--->
-      <div id="POV">
-     
-              <div class="slds-container_large slds-container--center">
-  
-                  <div class="slds-p-top_xx-large slds-p-bottom_x-large">
-  
-                      <div class="slds-grid slds-wrap">
-  
-                          <div class="slds-size_1-of-1 slds-small-size_7-of-12 slds-p-bottom_large">
-  
-                              <div class="slds-text-heading_large slds-p-top_medium" >The Tinker Project: Anthony Best </div>
-                              <div class="slds-p-vertical_small slds-text-heading_medium">
-                              Update Fancy Text Here <br>
-                              <img src="https://image.s4.sfmc-content.com/lib/fe32117276640478731173/m/1/f847102c-72e0-47f1-9f61-9814c971f03a.jpg"><br>
-                                  
-    
-  
-                                 
-                              </div>
-  
-                            
-  
-                          </div>
-                          
-                          <div class="slds-small-size_1-of-12 mobile-hidden" >
-                          </div>
-  
-                          <div class="slds-size_1-of-1 slds-small-size_4-of-12">
-  
-                                          
-              <div class="slds-p-top_large slds-p-bottom_large slds-p-horizontal_large form-wrapper" id="mainForm">
-      <div class="slds-text-heading_large slds-p-top_medium slds-text-align_center" style="color: #215CA0;">Sign Up Today</div>
-                     <div class="slds-p-vertical_small slds-text-align_center">
-                        <p>Tell us a bit about yourself and we'll get you on your way!</p></div>
-                   
-                   
-                   <form action="#" id="mainFormBody" method="post" class="">
-                     
-                    
-                          <div class="slds-p-bottom_small">
-                              <label class="slds-form-element__label" for="firstname">
-                                <abbr class="slds-required" title="required">*</abbr>First Name</label>
-                              <div class="formfield-input slds-p-horizontal_x-small">
-                                  <input class="slds-input" id="firstname" name="firstname" placeholder="Dwight" type="text" required=""></div>
-                          </div>
-                     <div class="slds-p-bottom_small">
-                              <label class="slds-form-element__label" for="lastname">
-                                <abbr class="slds-required" title="required">*</abbr>Last Name</label>
-                              <div class="formfield-input slds-p-horizontal_x-small">
-                                  <input class="slds-input" id="lastname" name="lastname" placeholder="Schrute" type="text" required=""></div>
-                          </div>
-                      
-                      <div class="slds-p-bottom_small">
-                          <label class="slds-form-element__label" for="Email">
-                            <abbr class="slds-required" title="required">*</abbr>Email Address</label>
-                          <div class="formfield-input slds-p-horizontal_x-small">
-                              <input class="slds-input" id="Email" name="Email" placeholder="DkSchrute@dundermiflin.com" type="text" required=""></div>
-                      </div>
-                      <div class="slds-p-bottom_small">
-                          <div class="slds-size_1-of-1 slds-medium-size_1-of-1">
-                              <label class="slds-form-element__label" for="Mobile">
-                                <abbr class="slds-required" title="required">*</abbr>Mobile Number (include leading "1")</label>
-                              <div class="formfield-input slds-p-horizontal_x-small">
-                                  <input class="slds-input" id="Mobile" name="Mobile" placeholder="1 000-555-1234" type="text" required=""></div>
-                          </div>
-                      </div>
-                     
-                      <div class="slds-p-bottom_small">
-                          <div class="slds-size_1-of-1 slds-medium-size_1-of-1">
-                              <label class="slds-form-element__label" for="Location">
-                                <abbr class="slds-required" title="required">*</abbr>Country Code (US, CA)</label>
-                              <div class="formfield-input slds-p-horizontal_x-small">
-                                  <input class="slds-input" id="Location" name="Location" placeholder="US, CA" type="text" required=""></div>
-                          </div>
-                      </div>
-                     
-                      <div class="slds-p-vertical_small slds-text-align_center">
-                         
-                          <!--<input class="form-button" id="submitBtn" type="submit" value="Submit">-->
-                          <button class="slds-button slds-button_brand" type="submit" value="Submit">SUBMIT INFORMATION</button></div>
-                  </form>
-                 
-              </div>
-                              
-              <div class="slds-p-top_xx-large slds-p-bottom_x-large slds-p-horizontal_x-large form-wrapper" id="thankYou" style="display: none;">
-  
-  
-                          <div class="slds-text-heading_large slds-p-top_medium slds-text-align_center" style="color: #215CA0;">Thank You!</div>
-                          <div class="slds-text-heading_small slds-p-vertical_small slds-text-align_center">
-                              <p>Your information has been submitted! Keep an eye out for personalized communications as you start on your Marketing Cloud Journey!</p>
-                          </div>
-                          <div class="push">
-                          </div>
-                      </div>   
-    
-                              
-                          </div>
-  
-  
-                      </div>
-  
-  
-                  </div>
-              </div>
-  
-  
+      <div class="slds-size_1-of-2 mobile-show">
+        <div class="hamburger">
+          <i class="fas fa-bars"></i></div>
+
       </div>
-      <!---.POV--->
-                        
-      <div>
-      <footer class="footer">
-  
-          <div class="slds-conta  iner_large slds-container--center">
-  
-  
-              <div class="disclaimer slds-p-vertical_large slds-text-align_center">
-                  Built on <span class="salesforce"></span></div>
-  
-  
-  
-              <div class="slds-text-align_center slds-p-bottom_x-large">Questions? Contact<br>
-                   <!---Name, Title---->Anthony Best, 
-  Enterprise Architect Hopeful
-  <br>
-                  <!--Contact Info----><a href="mailto:abest@salesforce.com">abest@salesforce.com</a></div>
-  
-  
-  
+      <div class="slds-size_1-of-1 slds-medium-size_2-of-3">
+        <div class="slds-p-left_x-large">
+
+
+          <div class="slds-text-align_right navigation">
           </div>
-  
-  
-      </footer><!-- End of footer-->
-    
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!---POV--->
+  <div id="POV">
+
+    <div class="slds-container_large slds-container--center">
+
+      <div class="slds-p-top_xx-large slds-p-bottom_x-large">
+
+        <div class="slds-grid slds-wrap">
+
+          <div class="slds-size_1-of-1 slds-small-size_7-of-12 slds-p-bottom_large">
+
+            <div class="slds-text-heading_large slds-p-top_medium">The Tinker Project: Anthony Best </div>
+            <div class="slds-p-vertical_small slds-text-heading_medium">
+              Studio 4623 <br>
+              <img
+                src="https://image.s4.sfmc-content.com/lib/fe32117276640478731173/m/1/f847102c-72e0-47f1-9f61-9814c971f03a.jpg"><br>
+
+
+
+
+            </div>
+
+
+
+          </div>
+
+          <div class="slds-small-size_1-of-12 mobile-hidden">
+          </div>
+
+          <div class="slds-size_1-of-1 slds-small-size_4-of-12">
+
+
+            <div class="slds-p-top_large slds-p-bottom_large slds-p-horizontal_large form-wrapper" id="mainForm">
+              <div class="slds-text-heading_large slds-p-top_medium slds-text-align_center" style="color: #215CA0;">Sign
+                Up Today</div>
+              <div class="slds-p-vertical_small slds-text-align_center">
+                <p>Tell us a bit about yourself and we'll get you on your way!</p>
+              </div>
+
+
+              <form action="#" id="mainFormBody" method="post" class="">
+
+
+                <div class="slds-p-bottom_small">
+                  <label class="slds-form-element__label" for="firstname">
+                    <abbr class="slds-required" title="required">*</abbr>First Name</label>
+                  <div class="formfield-input slds-p-horizontal_x-small">
+                    <input class="slds-input" id="firstname" name="firstname" placeholder="Dwight" type="text"
+                      required=""></div>
+                </div>
+                <div class="slds-p-bottom_small">
+                  <label class="slds-form-element__label" for="lastname">
+                    <abbr class="slds-required" title="required">*</abbr>Last Name</label>
+                  <div class="formfield-input slds-p-horizontal_x-small">
+                    <input class="slds-input" id="lastname" name="lastname" placeholder="Schrute" type="text"
+                      required=""></div>
+                </div>
+
+                <div class="slds-p-bottom_small">
+                  <label class="slds-form-element__label" for="Email">
+                    <abbr class="slds-required" title="required">*</abbr>Email Address</label>
+                  <div class="formfield-input slds-p-horizontal_x-small">
+                    <input class="slds-input" id="Email" name="Email" placeholder="DkSchrute@dundermiflin.com"
+                      type="text" required=""></div>
+                </div>
+                <div class="slds-p-bottom_small">
+                  <div class="slds-size_1-of-1 slds-medium-size_1-of-1">
+                    <label class="slds-form-element__label" for="Mobile">
+                      <abbr class="slds-required" title="required">*</abbr>Mobile Number (include leading "1")</label>
+                    <div class="formfield-input slds-p-horizontal_x-small">
+                      <input class="slds-input" id="Mobile" name="Mobile" placeholder="1 000-555-1234" type="text"
+                        required=""></div>
+                  </div>
+                </div>
+
+                <div class="slds-p-bottom_small">
+                  <div class="slds-size_1-of-1 slds-medium-size_1-of-1">
+                    <label class="slds-form-element__label" for="Location">
+                      <abbr class="slds-required" title="required">*</abbr>Country Code (US, CA)</label>
+                    <div class="formfield-input slds-p-horizontal_x-small">
+                      <input class="slds-input" id="Location" name="Location" placeholder="US, CA" type="text"
+                        required=""></div>
+                  </div>
+                </div>
+
+                <div class="slds-p-vertical_small slds-text-align_center">
+
+                  <!--<input class="form-button" id="submitBtn" type="submit" value="Submit">-->
+                  <button class="slds-button slds-button_brand" type="submit" value="Submit">SUBMIT INFORMATION</button>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="slds-p-top_xx-large slds-p-bottom_x-large slds-p-horizontal_x-large form-wrapper" id="thankYou"
+              style="display: none;">
+
+
+              <div class="slds-text-heading_large slds-p-top_medium slds-text-align_center" style="color: #215CA0;">
+                Thank You!</div>
+              <div class="slds-text-heading_small slds-p-vertical_small slds-text-align_center">
+                <p>Your information has been submitted! Keep an eye out for personalized communications as you start on
+                  your Marketing Cloud Journey!</p>
+              </div>
+              <div class="push">
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </div>
+  <!---.POV--->
+
+  <div>
+    <footer class="footer">
+
+      <div class="slds-conta  iner_large slds-container--center">
+
+
+        <div class="disclaimer slds-p-vertical_large slds-text-align_center">
+          Built on <span class="salesforce"></span></div>
+
+
+
+        <div class="slds-text-align_center slds-p-bottom_x-large">Questions? Contact<br>
+          <!---Name, Title---->Anthony Best,
+          Enterprise Architect Hopeful
+          <br>
+          <!--Contact Info----><a href="mailto:abest@salesforce.com">abest@salesforce.com</a></div>
+
+
+
+      </div>
+
+
+    </footer><!-- End of footer-->
+
     <script>
-          $(function() {
-      //alert ("form submitted")
-      $('form#mainFormBody').on('submit', function(event){
+      $(function () {
+        //alert ("form submitted")
+        $('form#mainFormBody').on('submit', function (event) {
           event.preventDefault();
-       var email = $("#Email").val();
-         var fname = $("#firstname").val();
-               var lname = $("#lastname").val();
+          var email = $("#Email").val();
+          var fname = $("#firstname").val();
+          var lname = $("#lastname").val();
           var phone = $("#Mobile").val();
-        var location = $("#Location").val();
-        
-        if(phone.length < 11)
-        {
-          alert(phone);
-          phone = "1" + phone;
-          alert(phone);
-        }
-       $.ajax({
+          var location = $("#Location").val();
+
+          if (phone.length < 11) {
+            alert(phone);
+            phone = "1" + phone;
+            alert(phone);
+          }
+          $.ajax({
             type: "POST",                                                    // Submission Type. 
             url: "/handleform",                        // Page that we are submitting to. Use AMPScript to get the URL of the current page       
-            data: "action=signup&Email=" + email + "&fname=" + fname + "&phone=" + phone + "&lname=" + lname + "&location=" + location ,
-            success: function(data) {                                        // This is the function that is called when the ajax returns sucessfully in this case data will 
-            console.log(data);                                                                 // contain the out variable from SSJS
-             try 
-                {
-                    if(data.Message == "Success")
-                    {
-                        $("#mainForm").slideUp("slow", function() {});
-                        $("#thankYou").slideDown("slow", function() {});        // Use jQuery to set the HTML of the div in the body to the SampleMessage from the SSJS output object.
-                    }
+            data: "action=signup&Email=" + email + "&fname=" + fname + "&phone=" + phone + "&lname=" + lname + "&location=" + location,
+            success: function (data) {                                        // This is the function that is called when the ajax returns sucessfully in this case data will 
+              console.log(data);                                                                 // contain the out variable from SSJS
+              try {
+                if (data.Message == "Success") {
+                  $("#mainForm").slideUp("slow", function () { });
+                  $("#thankYou").slideDown("slow", function () { });        // Use jQuery to set the HTML of the div in the body to the SampleMessage from the SSJS output object.
                 }
-                catch (msg) 
-                {
-  
-                }
+              }
+              catch (msg) {
+
+              }
             }
+          });
         });
-      });                        
-  });
-  </script>
-       
-   <script>       
-       $(".hamburger").click(function () {
-  
-  
-      $content = $(".navigation");
-      //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-      $content.slideToggle(500, function () {
-       
       });
-  
-  });
-          
-     </script>
-          
-   
-  
-  <script>
-  function phoneFormatter() {
-    $('#Mobile').on('input', function() {
-      var number = $(this).val().replace(/[^\d]/g, '')
-      if (number.length == 7) {
-        number = number.replace(/(\d{3})(\d{4})/, "$1$2");
-      } else if (number.length == 10) {
-        number = number.replace(/(\d{3})(\d{3})(\d{4})/, "$1$2$3");
-      } 
-      $(this).val(number)
-    });
-  };
-  
-  $(phoneFormatter);      
-  </script>
-    </div>
-    </body>
-  </html>
-  
+    </script>
+
+    <script>
+      $(".hamburger").click(function () {
+
+
+        $content = $(".navigation");
+        //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+        $content.slideToggle(500, function () {
+
+        });
+
+      });
+
+    </script>
+
+
+
+    <script>
+      function phoneFormatter() {
+        $('#Mobile').on('input', function () {
+          var number = $(this).val().replace(/[^\d]/g, '')
+          if (number.length == 7) {
+            number = number.replace(/(\d{3})(\d{4})/, "$1$2");
+          } else if (number.length == 10) {
+            number = number.replace(/(\d{3})(\d{3})(\d{4})/, "$1$2$3");
+          }
+          $(this).val(number)
+        });
+      };
+
+      $(phoneFormatter);      
+    </script>
+  </div>
+</body>
+
+</html>
