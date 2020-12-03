@@ -11,7 +11,7 @@ router.get('/thankyou', function(req, res, next) {
   res.render('thankyou', { title: 'Express' });
 })
 
-
+//Update URL
 router.post('/handleform', function(req, res, next) {
   var options = {
     'method': 'POST',
@@ -19,6 +19,7 @@ router.post('/handleform', function(req, res, next) {
     'headers': {
       'Content-Type': 'application/json'
     },
+    //Update Client ID and Secret
     body: JSON.stringify({"grant_type":"client_credentials","client_id":"hvyrxazeydwv5hwrayjlllbv","client_secret":"X45DOsIYk0NYGFxwXetuRL8y","account_id":"523005653"})
   
   };
@@ -29,6 +30,7 @@ router.post('/handleform', function(req, res, next) {
     else  {
       var options = {
         'method': 'POST',
+        //Update URL
         'url': 'https://mczpcy6h6h406svhb8h119rpfb91.rest.marketingcloudapis.com/interaction/v1/events',
         'headers': {
           'Content-Type': 'application/json',
